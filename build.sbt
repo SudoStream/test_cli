@@ -1,6 +1,6 @@
 name := """aeh-cli"""
 
-organization := "io.sudostream.api-event-horizon"
+organization := "io.sudostream.api-antagonist"
 
 version := "1.0.0-SNAPSHOT"
 
@@ -14,8 +14,8 @@ libraryDependencies ++= {
   val scalaTestV = "2.2.6"
 
   Seq(
-    "io.sudostream.api-event-horizon" %% "aeh-messages" % "1.0.0-SNAPSHOT",
-    "io.sudostream.api-event-horizon" %% "scram" % "1.0.0-SNAPSHOT",
+    "io.sudostream.api-antagonist" %% "messages" % "0.0.1-SNAPSHOT",
+    "io.sudostream.api-antagonist" %% "screenplay-guild" % "0.0.1-SNAPSHOT",
 
     "com.github.scopt" %% "scopt" % "3.5.0",
     "com.typesafe.akka" %% "akka-actor" % akkaV,

@@ -1,4 +1,4 @@
-package io.sudostream.api_event_horizon.cli
+package io.sudostream.api_antagonist.cli
 
 import java.io.File
 import java.nio.file.Files
@@ -13,7 +13,7 @@ import com.typesafe.config.ConfigFactory
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.apache.kafka.common.serialization.{ByteArraySerializer, StringSerializer}
 
-object ApiEventHorizonCLI {
+object ApiAntagonistCLI {
 
   implicit val system = ActorSystem()
   implicit val executor = system.dispatcher
@@ -26,7 +26,7 @@ object ApiEventHorizonCLI {
 
   def main(args: Array[String]) {
 
-    val parser = new scopt.OptionParser[Conf]("API Event Horizon CLI") {
+    val parser = new scopt.OptionParser[Conf]("API Antagonist CLI") {
       head("AEH CLI", "1.x")
 
       opt[File]('a', "api-definition").required().valueName("<file>").
