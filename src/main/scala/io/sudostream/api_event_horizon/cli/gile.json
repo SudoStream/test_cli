@@ -1,0 +1,38 @@
+{
+  "apiTitle": "Star Birth",
+  "apiDescription": "This API allows you to create stars",
+  "apiVersion": "1.0.0",
+  "hostname": "starbirth.com",
+  "basepath": "/v1",
+  "schemes": [
+    "https"
+  ],
+  "ports": [
+    80
+  ],
+  "generatedTests": [
+    {
+      "uriPath": "/stars",
+      "method": "GET",
+      "documentedReturnCodes": [
+        200
+      ]
+    },
+    {
+      "uriPath": "/stars/{starId}",
+      "method": "GET",
+      "documentedReturnCodes": [
+        200,
+        404
+      ]
+    },
+    {
+      "uriPath": "/stars",
+      "method": "POST",
+      "documentedReturnCodes": [
+        200,
+        409
+      ]
+    }
+  ]
+}
